@@ -1,0 +1,284 @@
+:root {
+                --item13p-margin-left: 0px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-column-gap: 0px;
+                
+            }
+            .grid-container > div{
+                border: 5px solid white;
+                background-color: white;
+                color: black;
+                font-family: 'Roboto', sans-serif;
+                
+                
+            }
+            .item1 {
+                grid-column: 1 / span 2;
+                grid-row: 1;
+                background-color: black;
+                height: auto;
+            }
+            .item1 > p{
+                position: relative;
+                float: left;
+                margin: 10px 30px 10px 30px;
+                font-size: 120%;
+                color: white;
+            }
+            #menu {
+                position: relative;
+                background-color: black;
+                border-color: black;
+                top: -10px;
+                left: -10px;
+                right: -30px;
+                bottom: -30px;
+                height: 100%;
+                width: 105%;
+            }
+            .item2 {
+                grid-column: 3 / span 4;
+                grid-row: 1;
+                background-color: black;
+            }
+            .item2 > p{
+                position: relative;
+                float: right;
+                margin: 10px 30px 10px 30px;
+                font-size: 120%;
+                color: white;
+            }
+            .item3 {
+                grid-column: 1 / span 2;
+                grid-row: 2;
+                height: 100%;
+                left: -10px;
+            }
+            .item3 > h1{
+                position: relative;
+                float: left;
+                margin-left: 30px;
+                font-size: 400%;
+            }
+            .item4 {
+                grid-column: 3 / span 4;
+                grid-row: 2 / span 4;
+                height: 100%;
+                
+            }
+            .item4 > img{
+                width: 80%;
+                position: relative; //to overflow border and touch header
+                top: 0px;
+                overflow: hidden;
+            }
+            .item5 {
+                grid-column: 1;
+                grid-row: 3;
+                height: 100%;
+              
+            }
+            .item6 {
+                grid-column-start: 2;
+                grid-row: 3;
+                height: 100%;
+            }
+            .top-content > h1, p, a{
+                margin-left: 30px;
+                margin-right: 10px;
+            }
+            .top-content > a:link {
+                color: black;
+            }
+            .top-content > a:visited {
+                color: black;
+            }
+            .top-content > a:hover {
+                color: #266EF1;
+            }
+            .top-content > a:active {
+                color: black;
+            }
+            .item7 {
+                grid-column: 1;
+                grid-row: 4;
+                height: 100%;
+            }
+            .button {
+                background-color: #266EF1; 
+                border: none;
+                color: white;
+                padding: 15px 32px 15px 32px;
+                text-align: left;
+                text-decoration: none;
+                cursor: pointer;
+                width: 80%;
+                font-size: 100%;
+                margin-left: 0px;
+                margin-right: 10px;
+                overflow: hidden;
+            }
+            .button:hover{
+                background-color: black;
+            }
+            .item8 {
+                grid-column-start: 2;
+                grid-row: 4;
+                height: 100%; 
+            }
+            .button2 {
+                background-color: white;
+                color: #266EF1;
+                border: 1px solid #266EF1;
+                padding: 15px 32px 15px 32px;
+                text-align: left;
+                text-decoration: none;
+                cursor: pointer;
+                width: 80%;
+                font-size: 100%;
+                margin-left: 0px;
+                overflow: hidden;
+            }
+            .button2:hover{
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+            }
+            .item9 {
+                grid-column: 1 / span 4;
+                grid-row: 5;
+                height: 100%; 
+            }
+            .item10 {
+                grid-column: 1 / span 4;
+                grid-row: 6;
+                height: auto; 
+            }
+            #parent {
+                position: relative;
+                border: none;
+                width: auto;
+                height: 80%;
+                left: 0px;
+            }
+
+            #child {
+                position: absolute;
+                border: 1px solid white;
+                top: 20%;
+                height: 25%;
+                background-color: white; 
+                padding: 40px 100px 40px 0px;
+                width: 60%;
+                cursor: pointer;
+                
+            }
+            #child > a{
+                color: black;
+                text-decoration: none;
+                position: inherit;
+                left: 0px;
+            }
+            #child > a:visited {
+                color: black;
+            }
+            #child > a:hover {
+                color: #266EF1;
+            }
+            #child > a:active {
+                color: black;
+            }
+            .item11 {
+                grid-column: 1 / span 4;
+                grid-row: 7 ; 
+                height: 200%; 
+            }
+            .item12 {
+                grid-column: 1 / span 4;
+                grid-row: 8; 
+                height: 200%; 
+            }
+            .item13 {
+                grid-column: 1 / span 4;
+                grid-row: 9 ; 
+                height: auto; 
+                
+            }
+            .item13 > div img{
+                height: auto; 
+                width: auto; 
+                max-width: 350px; 
+                max-height: 450px;
+            }
+            h3 {
+                letter-spacing: 0.5px;
+            }
+            .mas > p{
+                margin-left: var(--item13p-margin-left);
+            }
+            .mas > a:link {
+                color: #266EF1;
+                text-decoration: none;
+            }
+            .mas > a:visited {
+                color: #266EF1;
+                text-decoration: none;
+            }
+            .mas > a:hover {
+                color: #266EF1;
+                text-decoration: underline;
+                text-underline-position: under;                
+            }
+            .mas > a:active {
+                color: #266EF1;
+                text-decoration: none;
+            }
+   
+            .pagination-wrapper {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                padding-left: 30px;
+            }
+
+            
+            .item14 {
+                grid-column: 1 ;
+                grid-row: 10 ; 
+                height: 100%; 
+                padding-left: 30px;
+            }
+            .item14 > p{
+                margin-left: var(--item13p-margin-left);
+            }
+            .item14p > a:link {
+                color: #266EF1;
+                text-decoration: none;
+            }
+            .item14p > a:visited {
+                color: #266EF1;
+                text-decoration: none;
+            }
+            .item14p > a:hover {
+                color: #266EF1;
+                text-decoration: none;         
+            }
+            .item14p > a:active {
+                color: #266EF1;
+                text-decoration: none;
+            }
+            .item15 {
+                grid-column: 2 / span 4 ;
+                grid-row: 10 ; 
+                height: 100%; 
+            }
+            .item15 > img{
+                width: 80%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: 30px;
+            }
